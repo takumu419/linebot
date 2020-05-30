@@ -8,7 +8,7 @@ class LinebotController < ApplicationController
             cofig.channel_token = ENV["LINE_CHANNEL_TOKEN"]
         }
     end
-end
+
 
     def callback
         @post=Post.offset(rand(POst.count)).first
