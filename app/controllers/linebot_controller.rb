@@ -46,6 +46,9 @@ class LinebotController < ApplicationController
         elsit event.message["text"].include?("にゅんか")
             response ="にゅんです"
             
+         elsit event.message["text"].include?("にゅめ")
+            response ="にゅめです"
+            
         else
             response = @post.name
         end
